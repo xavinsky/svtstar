@@ -6,7 +6,7 @@ SVTStar est un QCM de révision de SVT, chapitre par chapitre. Chaque question p
 
 ## 2. Déroulement d'une partie
 
-- Le joueur commence avec **50 points**.
+- Le joueur commence avec **20 points** : les chapitres ont peu de questions par niveau, un départ plus haut laisserait une marge telle qu'on ne pourrait presque plus perdre.
 - La **première passe** pose toutes les questions du mode choisi. Une erreur ne l'arrête pas : la bonne réponse et l'explication s'affichent, des points sont retirés et la question est mise de côté.
 - À la fin de la passe, une **nouvelle passe** repose seulement les questions ratées. On recommence ainsi jusqu'à ce qu'il n'y ait plus d'erreur. Une question réussie n'est plus posée de la partie.
 - La partie est **gagnée** quand toutes les questions ont été réussies.
@@ -44,11 +44,11 @@ Les niveaux du chapitre « climat » :
 | Entraînement moyen | niveau 2 seulement | non |
 | Entraînement difficile | niveau 3 seulement | non |
 
-Les entraînements suivent les mêmes règles : 50 points, passes successives, partie perdue à 0. Ils servent à travailler un niveau sans toucher au classement. Les erreurs qu'on y fait comptent dans les questions les plus ratées.
+Les entraînements suivent les mêmes règles : 20 points, passes successives, partie perdue à 0. Ils servent à travailler un niveau sans toucher au classement. Les erreurs qu'on y fait comptent dans les questions les plus ratées.
 
 ## 5. Étoiles, records et classement
 
-- **Étoiles** = points à la fin d'une partie gagnée ÷ 10, arrondi à l'inférieur, 5 au maximum. Sans faute (50 points) donne 5 étoiles ; 25 points donnent 2 étoiles ; moins de 10 points, aucune.
+- **Étoiles** = points à la fin d'une partie gagnée ÷ 4, arrondi à l'inférieur, 5 au maximum. Sans faute (20 points) donne 5 étoiles ; 10 points donnent 2 étoiles ; moins de 4 points, aucune.
 - Chaque joueur garde, par chapitre, son **record** : le meilleur score d'une partie gagnée en mode « Tout le chapitre ». Il garde aussi son nombre de parties et le nombre de fois où il a raté chaque question.
 - Le **classement** d'un chapitre range les joueurs de l'appareil qui l'ont terminé, selon leur record.
 - Les joueurs sont créés sur l'appareil (prénom ou pseudo). Les données sont dans `localStorage`, avec le préfixe `svtstar:`. Supprimer un joueur efface aussi ses records.

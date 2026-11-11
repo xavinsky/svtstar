@@ -1,6 +1,6 @@
 # SVTStar
 
-Jeu de révision de SVT en QCM, chapitre par chapitre. On part de 50 points ; les questions ratées reviennent à chaque passe jusqu'à ce que tout soit réussi, et chaque erreur coûte des points. Étoiles selon le score final, modes d'entraînement par niveau, profils de joueurs, record et classement par chapitre.
+Jeu de révision de SVT en QCM, chapitre par chapitre. On part de 20 points ; les questions ratées reviennent à chaque passe jusqu'à ce que tout soit réussi, et chaque erreur coûte des points. Étoiles selon le score final, modes d'entraînement par niveau, profils de joueurs, record et classement par chapitre.
 
 Chapitres :
 - SVT, chapitre 1 : le climat, les mouvements d'air et d'eau sur Terre, et les énergies qu'on en tire.

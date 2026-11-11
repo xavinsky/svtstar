@@ -1,17 +1,17 @@
-/* SVTStar : QCM par chapitre. On part de 50 points ; chaque passe pose les
+/* SVTStar : QCM par chapitre. On part de 20 points ; chaque passe pose les
    questions pas encore réussies, du plus facile au plus difficile, et chaque
    erreur coûte des points (facile −3, moyen −2, difficile −1). La partie est
    gagnée quand toutes les questions ont été réussies, perdue à 0 point.
-   Étoiles = points ÷ 10, arrondi à l'inférieur. Les joueurs et leurs records
+   Étoiles = points ÷ 4, arrondi à l'inférieur. Les joueurs et leurs records
    sont gardés dans le navigateur. */
 (function () {
   'use strict';
 
   var CHAPS = window.CHAPITRES || [];
   var LEVELS = {1: 'Facile', 2: 'Moyen', 3: 'Difficile'};
-  var START = 50;
+  var START = 20;
   var PENALTY = {1: 3, 2: 2, 3: 1};
-  function starsOf(points) { return Math.max(0, Math.min(5, Math.floor(points / 10))); }
+  function starsOf(points) { return Math.max(0, Math.min(5, Math.floor(points / 4))); }
   function starGlyphs(n) { return '<span class="star-glyphs has">' + '★'.repeat(n) + '</span><span class="star-glyphs">' + '☆'.repeat(5 - n) + '</span>'; }
   var KEY = 'svtstar:';
 
@@ -214,7 +214,7 @@
     }
     app.innerHTML =
       '<div class="quiz-top"><div><div class="muted">' + esc(chapLabel(r.chap)) + '</div>' +
-      '<div class="streak' + (r.points < 20 ? ' low' : '') + '">' + r.points + ' <small>points</small></div>' +
+      '<div class="streak' + (r.points < 8 ? ' low' : '') + '">' + r.points + ' <small>points</small></div>' +
       '<div>' + (r.training ? '<span class="lv-tag lv-' + r.level + '">Entraînement ' + LEVELS[r.level].toLowerCase() + '</span>' : starGlyphs(starsOf(r.points))) + '</div></div>' +
       '<div class="muted right">' + (r.training || !r.best ? '' : 'Record : <span class="record">' + r.best + ' pts</span><br>') +
       'Erreurs : ' + r.errors + '<br>Restent : ' + remaining() + '</div></div>' +

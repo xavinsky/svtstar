@@ -5,7 +5,7 @@ Jeu de révision de SVT en QCM, chapitre par chapitre. On part de 20 points ; le
 Chapitres :
 - SVT, chapitre 1 : le climat, les mouvements d'air et d'eau sur Terre, et les énergies qu'on en tire.
 
-Voir aussi HistoStar et OrthoStar.
+Fait partie d'[EduStar](https://tekio.org/edustar/).
 
 ## En local
 

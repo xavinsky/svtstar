@@ -115,6 +115,6 @@ Le texte d'une question sert aussi de clé pour le compteur « questions les plu
 
 ## 9. Publication
 
-Le workflow `.github/workflows/pages.yml` génère `questions-data.js` (une erreur dans les questions bloque la publication) et publie `index.html`, les `.js` et `style.css` sur GitHub Pages. Les liens « HistoStar » et « OrthoStar » de la barre du haut pointent vers `../histostar/` et `../orthostar/` : ces dossiers doivent rester à côté de celui-ci.
+Le workflow `.github/workflows/pages.yml` génère `questions-data.js` (une erreur dans les questions bloque la publication) et publie `index.html`, les `.js` et `style.css` sur GitHub Pages. Le lien « EduStar » de la barre du haut pointe vers `../edustar/`, la page qui regroupe les cours et les jeux de révision : le dépôt `edustar` doit rester à côté de celui-ci.
 
 Les questions du chapitre « climat » sont tirées du cours de SVT du professeur : activité 4 (modèle lampe-tube-globe, expérience de la fumée, expérience du courant océanique froid), bilan 4 et activité 7 (les énergies). Le cours lui-même n'est pas dans le dépôt.
